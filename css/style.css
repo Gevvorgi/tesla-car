@@ -1,0 +1,639 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+:root {
+    --accent-color: #E51937;
+}
+h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+.nav {
+    margin: 24px 60px 58px 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    list-style: none;
+}
+.menu-last .menu__item{
+    margin-right: 30px;
+}
+.menu__item {
+    padding-bottom: 6px;
+    color: inherit; 
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+.menu__item:hover, .menu__item.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+.item1 {
+    margin-right: 63px;
+}
+.item2 {
+    margin-right: 24px;
+}
+.item3 {
+    margin-right: 44px;
+}
+.item4 {
+    margin-right: 46px;
+}
+.tesla-model {
+    margin-bottom: 26px;
+    text-align: center;
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 594px;
+}
+.tesla-model__title {
+    font-size: 90px;
+    font-weight: 600;
+}
+.tesla-model__text {
+    font-size: 15px;
+    font-weight: 500;
+}
+.tesla-info {
+    margin-bottom: 39px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.block {
+    display: flex;
+    align-items: center;
+}
+.info-block {
+    margin-right: 81px;
+    display: flex;
+    align-items: center;
+}
+.info-block:nth-child(2) {
+    margin-right: 105px;
+}
+.info-block__img {
+    margin-right: 14px;
+    width: 46px;
+}
+.info-block:nth-child(2) img {
+    margin-right: 11px;
+    width: 30px;
+}
+.info-block__text1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+.info-block__text1 span {
+    font-size: 20px;
+    font-weight: 600;
+}
+.info-block__text2 {
+    font-size: 12px;
+    font-weight: 400;
+}
+.test-drive__img {
+    margin-right: 7px;
+}
+.test-drive {
+    margin-right: 40px;
+    max-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.order {
+    padding: 0;
+    min-width: 160px;
+    min-height: 40px;
+    color: var(--accent-color);
+    background: transparent;
+    font-family: inherit;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.test-drive:hover + .order,
+.order:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+.go_bottom {
+    margin-bottom: 37px;
+    display: block;
+    text-align: center;
+}
+.main__inner {
+    height: 885px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/tesla-model-s.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.main__title {
+    margin: 64px 0 0 100px;
+    color: var(--accent-color);
+    font-size: 70px;
+    font-weight: 600;
+}
+.main-block__info {
+    padding: 51px 44px 63px 52px;
+    width: 440px;
+    color: #fff;
+    background: var(--accent-color);
+}
+.main-block__info__title {
+    margin-bottom: 11px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.main-block__info__text {
+    font-size: 15px;
+    font-weight: 300;
+}
+.main-block-top {
+    margin-bottom: 66px;
+}
+.features {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+.features:nth-child(2) {
+    margin-bottom: 40px;
+}
+.features:last-child {
+    margin-bottom: 182px;
+}
+.features__img1 {
+    margin: 0 19px 0 4px;
+}
+.features__img2 {
+    margin-right: 20px;
+}
+.features__img3 {
+    margin: 0 24px 0 5px;
+}
+.features__text-block {
+    max-width: 172px;
+}
+.features__title {
+    margin-bottom: 3px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.features__accent {
+    font-size: 35px;
+    font-weight: 600;
+}
+.features__text {
+    font-size: 12px;
+    font-weight: 400;
+}
+.main-block-bottom {
+    display: flex;
+}
+.information {
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+}
+.information img {
+    margin-right: 10px;
+}
+.information a {
+    color: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.inverse__button {
+    padding: 0;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.inverse__button:hover {
+    background: #fff;
+    color: var(--accent-color);
+}
+.footer-container {
+    display: flex;
+}
+.footer-block__info {
+    padding: 51px 49px 60px 56px;
+}
+.footer-block-top {
+    margin-bottom: 49px;
+}
+.footer-middle__info__title {
+    margin-bottom: 26px;
+}
+.rating {
+    margin-bottom: 110px;
+    padding-right: 44px;
+}
+.rating-row {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating-row:hover {
+    margin-bottom: 0;
+}
+.rating-row__title {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.rating-row__accent {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.footer-bottom {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-bottom-info {
+    margin-left: 22px;
+}
+.footer-bottom__title {
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.footer-bottom__text {
+    font-size: 25px;
+    font-weight: 600;
+}
+.footer-information {
+    margin-left: -28px;
+}
+.footer-block_block {
+    min-height: 625px;
+    position: static;
+}
+.footer-block {
+    position: relative;
+}
+.footer-block__title-back {
+    position: absolute;
+    top: 100px;
+    left: 183px;
+    width: 821px;
+    color: var(--accent-color);
+    font-size: 200px;
+    font-weight: 600;
+    opacity: 0.1;
+}
+.main-frame {
+    position: absolute;
+    top: 223px;
+    left: -100px;
+}
+.footer-block__item {
+    width: 177px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 87.768%;
+}
+.frame-item1 {
+    top: 220px;
+    left: 164px;
+}
+.frame-item2 {
+    top: 176px;
+    left: 442px;
+}
+.frame-item3 {
+    width: 240px;
+    top: 589px;
+    left: 498px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+@media screen and (max-width: 769px) {
+    .container {
+        max-width: 768px;
+    }
+    .nav {
+        margin: 24px 33px 80px 15px;
+    }
+    .menu__item {
+        display: none;
+    }
+    .tesla-model {
+        margin-bottom: 36px;
+        min-height: 473px;
+        background-position: center bottom;
+        background-size: contain;
+    }
+    .tesla-info {
+        margin-bottom: 63px;
+        flex-direction: column;
+    }
+    .info-block {
+        margin-right: 64px;
+    }
+    .block:first-child {
+        margin-bottom: 54px;
+    }
+    .info-block:nth-child(2) {
+        margin-right: 0;
+    }
+    .info-block__img {
+        margin-right: 14px;
+        width: 65px;
+    }
+    .info-block:nth-child(2) img {
+        margin-right: 11px;
+        width: 43px;
+    }
+    .info-block__text1 {
+        font-size: 50px;
+    }
+    .test-drive__img {
+        margin-right: 7px;
+    }
+    .test-drive {
+        max-height: 22px;
+        color: var(--accent-color);
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        filter: none;
+    }
+    .order {
+        min-width: 220px;
+        min-height: 55px;
+        background: var(--accent-color);
+        color: #fff;
+        font-size: 16px;
+        line-height: 55px;
+        border: none;
+    }
+    .order:active {
+        background: transparent;
+        color: var(--accent-color);
+        border: 2px solid var(--accent-color);
+    }
+    .go_bottom {
+        margin-bottom: 36px;
+    }
+    .go_bottom img {
+        width: 24px;
+    }
+    .main__inner {
+        flex-direction: column;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+    .main-block {
+        min-height: 500px;
+    }
+    .main__title {
+        margin: 7px 58px 0 0;
+        text-align: right;
+    }
+    .main-block__info {
+        padding: 55px 80px 52px 34px;
+        max-height: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .main-block-top {
+        margin-right: 100px;
+        max-width: 316px;
+    }
+    .block__info__title {
+        margin-bottom: 21px;
+    }
+    .features, .features:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .features:last-child {
+        margin-bottom: 75px;
+    }
+    .information {
+        margin-right: 36px;
+    }
+    .information img {
+        width: 31px;
+    }
+    .information a {
+        font-size: 16px;
+    }
+    .inverse__button {
+        border: 3px solid #fff;
+    }
+    .md-none {
+        display: none;
+    }
+    .footer-container {
+        flex-direction: column-reverse;
+    }
+    .footer-block {
+        margin-top: 96px;
+    }
+    .footer-block__title-back {
+        top: 37px;
+        left: 82px;
+        max-width: 608px;
+        font-size: 148px;
+    }
+    .main-frame {
+        top: 114px;
+        left: 1px;
+    }
+    .main-frame img {
+        max-width: 750px;
+    }
+    .footer-block__item img {
+        width: 10px;
+    }
+    .footer-block__item {
+        font-size: 15px;
+    }
+    .frame-item1 {
+        height: 201px;
+        top: 115px;
+        left: 190px;
+    }
+    .frame-item2 {
+        height: 95px;
+        top: 80px;
+        left: 389px;
+    }
+    .frame-item3 {
+        height: 85px;
+        top: 372px;
+        left: 429px;
+    }
+    .footer-block__info {
+        padding: 62px 55px 63px 34px;
+    }
+    .footer-block-top {
+        margin-right: 71px;
+    }
+    .rating {
+        padding-right: 0;
+        margin-bottom: 71px;
+    }
+}
+@media screen and (max-width: 376px) {
+    .container {
+        max-width: 375px;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .nav {
+        margin: 5px 21px 30px 2px;
+    }
+    .tesla-model {
+        margin-bottom: 18px;
+        min-height: 230px;
+    }
+    .tesla-model__title {
+        font-size: 50px;
+    }
+    .tesla-model__text {
+        font-size: 10px;
+    }
+    .tesla-info {
+        margin-bottom: 39px;
+    }
+    .block:first-child  {
+        margin-bottom: 43px;
+    }
+    .info-block__img {
+        width: 38px;
+    }
+    .info-block:nth-child(2) img {
+        width: 25px;
+    }
+    .info-block__text1 {
+        font-size: 27px;
+    }
+    .info-block__text2 {
+        font-size: 10px;
+    }
+    .test-drive {
+        margin-right: 25px;
+    }
+    .test-drive__text {
+        font-size: 13px;
+    }
+    .order {
+        min-width: 160px;
+        min-height: 40px;
+        font-size: 13px;
+        line-height: 40px;
+    }
+    .go_bottom {
+        margin-bottom: 0;
+    }
+    .go_bottom img {
+        width: 28px;
+    }
+    .main-block {
+        min-height: 249px;
+    }
+    .main__inner {
+        display: block;
+        max-height: 550px;
+    }
+    .main-block__info {
+        padding: 18px 29px 34px;
+    }
+    .main-block-top {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .main-block__info__text {
+        margin: 0;
+    }
+    .footer-block__info {
+        padding-bottom: 65px;
+    }
+    .footer-block_block {
+        min-height: 325px;
+    }
+    .footer-block__title-back {
+        max-width: 370px;
+        top: -80px;
+        left: 0;
+        font-size: 90px;
+    }
+    .footer-block__item{
+        max-width: 81px;
+        font-size: 7px;
+    }
+    .main-frame {
+        top: 25px;
+    }
+    .main-frame img {
+        max-width: 362px;
+    }
+    .frame-item1 {
+        height: 97px;
+        top: 25px;
+        left: 91px;
+    }
+    .frame-item2 {
+        height: 45px;
+        top: 9px;
+        left: 186px;
+    }
+    .frame-item3 {
+        top: 106px;
+        left: 207px;
+    }
+    .frame-item3 img {
+        height: 41px;
+    }
+}
