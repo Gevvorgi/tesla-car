@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
+            <nav class="nav md-none">
                 <img src="img/logo_tesla.svg" alt="Tesla Logo">
                 <ul class="menu">
                     <li><a class="item1 menu__item active" href="#">Model S</a></li>
@@ -30,6 +30,30 @@
                     <li><img src="img/menu.svg" alt="Menu"></li>
                 </ul>
             </nav>
+            <div class="mobile-bar logo">
+                <img src="img/logo_tesla.svg" alt="Tesla Logo">
+                <div class="wrapper">
+                    <input type="checkbox" id="check-menu">
+                    <label for="check-menu">
+                        <img src="img/menu.svg" alt="Menu">
+                    </label>
+                    <nav class="main-menu">
+                        <div class="menu-blocks">
+                            <div class="menu">
+                                <a class="item1 menu__item active" href="#">Model S</a>
+                                <a class="item2 menu__item" href="#">Model X</a>
+                                <a class="item3 menu__item" href="#">Model 3</a>
+                                <a class="item4 menu__item" href="#">Roadster</a>
+                                <a class="item5 menu__item" href="#">Energy</a>
+                            </div>
+                            <div class="menu menu-last">
+                                <a class="menu__item" href="#">Магазин</a>
+                                <a class="menu__item" href="#">Войти</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
             <div class="tesla-model">
                 <h1 class="tesla-model__title">Model S</h1>
                 <p class="tesla-model__text">Добро пожаловать в будущее!</p>
